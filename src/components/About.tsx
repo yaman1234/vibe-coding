@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/About.css';
+import '../styles/common.css';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="about-section">
+    <section id="about" className="about-section section-container">
       <div className="container">
-        <h2>About Me</h2>
+        <h2 className="section-heading">About Me</h2>
         <div className="about-content">
           <div className="profile-text">
             <p>

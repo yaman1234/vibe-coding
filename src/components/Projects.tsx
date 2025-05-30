@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Projects.css';
+import '../styles/common.css';
 
 interface Project {
   title: string;
@@ -92,9 +93,9 @@ const Projects: React.FC = () => {
     : projects.filter(project => project.category === filter);
 
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects" className="projects-section section-container">
       <div className="container">
-        <h2>Featured Projects</h2>
+        <h2 className="section-heading">Projects</h2>
         
         <div className="project-filters">
           {categories.map((category, index) => (

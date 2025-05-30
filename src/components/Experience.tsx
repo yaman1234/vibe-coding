@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Experience.css';
+import '../styles/common.css';
 
 interface Job {
   title: string;
@@ -13,50 +14,51 @@ interface Job {
 const Experience: React.FC = () => {
   const experiences: Job[] = [
     {
-      title: "Senior QA Engineer",
-      company: "Tech Solutions Inc.",
-      period: "2021 - Present",
-      location: "Minneapolis, MN",
+      title: "QA Engineer",
+      company: "Javra Software",
+      period: "2022 march - Present",
+      location: "Nakhkhu, Lalitpur",
       description: [
-        "Lead a team of 5 QA engineers in implementing automated testing frameworks",
-        "Reduced regression testing time by 60% through test automation",
-        "Implemented CI/CD pipeline integration with automated testing",
-        "Developed and maintained test strategies for multiple enterprise projects"
+        "Designed and executed comprehensive test cases to ensure software quality and compliance with requirements.",
+        "Logged, tracked, and managed defects through resolution using standard defect management tools.",
+        "Performed regression testing to validate the integrity of existing functionality after code changes.",
+        "Contributed to automated test script development to improve testing efficiency and coverage.",
+        "Collaborated closely with cross-functional development teams to resolve issues and enhance product quality.",
+        "Maintained detailed documentation of test plans, test cases, and test results to support transparency and knowledge sharing."
       ],
-      technologies: ["Selenium", "TestNG", "Jenkins", "Docker", "Git", "JIRA"]
+      technologies: ["Selenium", "TestNG", "Docker", "Git", "JIRA"]
     },
     {
-      title: "QA Automation Engineer",
-      company: "Digital Innovations Corp",
-      period: "2019 - 2021",
-      location: "St. Paul, MN",
+      title: "Security Analyst Intern",
+      company: "Security Pal",
+      period: "2021 Nov - 2022 Feb",
+      location: "Lazimpat, Kathmandu",
       description: [
-        "Designed and implemented automated test suites for web applications",
-        "Created and maintained over 1000 automated test cases",
-        "Collaborated with developers to improve application testability",
-        "Mentored junior QA engineers in test automation best practices"
+        "Reviewed client company policy documents to accurately complete security questionnaires.",
+        "Ensured responses aligned with client security frameworks and compliance standards.",
+        
       ],
-      technologies: ["Cypress", "JavaScript", "Python", "REST API", "GitLab"]
+      technologies: []
     },
     {
-      title: "Software QA Engineer",
-      company: "Innovative Systems LLC",
-      period: "2017 - 2019",
-      location: "Minneapolis, MN",
+      title: "Computer operator",
+      company: "Sudesha School",
+      period: "2021 May  - 2022 Feb",
+      location: "Nakhkhu, Lalitpur",
       description: [
-        "Performed manual and automated testing for web and mobile applications",
-        "Developed test plans and test cases for new features",
-        "Identified and tracked software defects using bug tracking tools",
-        "Participated in daily scrum meetings and sprint planning"
+        "Handled content updates and maintenance of the school’s website.",
+        "Managed and updated the school’s social media pages to enhance online presence.",
+        "Updated daily academic and administrative data using the Veda App.",
+        "Provided technical support to staff and students for computer-related issues."
       ],
-      technologies: ["JUnit", "Postman", "SQL", "JIRA", "Agile"]
+      technologies: []
     }
   ];
 
   return (
-    <section id="experience" className="experience-section">
+    <section id="experience" className="experience-section section-container">
       <div className="container">
-        <h2>Professional Experience</h2>
+        <h2 className="section-heading">Experience</h2>
         <div className="timeline">
           {experiences.map((job, index) => (
             <div key={index} className="timeline-item">

@@ -135,38 +135,7 @@
   color: #64748b;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.achievements h5 {
-  color: #2c3e50;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.achievements ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.achievements li {
-  color: #64748b;
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.achievements li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #3498db;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {

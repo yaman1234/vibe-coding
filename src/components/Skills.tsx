@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Skills.css';
+import '../styles/common.css';
 
 interface Skill {
   name: string;
@@ -17,9 +18,7 @@ const Skills: React.FC = () => {
       title: "Testing Tools",
       skills: [
         { name: "Selenium", expertise: 90 },
-        { name: "JUnit", expertise: 85 },
         { name: "TestNG", expertise: 80 },
-        { name: "Cypress", expertise: 85 },
         { name: "Postman", expertise: 95 },
         { name: "JMeter", expertise: 75 }
       ]
@@ -27,11 +26,11 @@ const Skills: React.FC = () => {
     {
       title: "Programming",
       skills: [
-        { name: "Java", expertise: 85 },
-        { name: "Python", expertise: 80 },
-        { name: "JavaScript", expertise: 75 },
-        { name: "SQL", expertise: 90 },
-        { name: "HTML/CSS", expertise: 70 }
+        { name: "Java", expertise: 60 },
+        { name: "Python", expertise: 60 },
+        { name: "JavaScript", expertise: 60 },
+        { name: "SQL", expertise: 70 },
+        { name: "HTML/CSS", expertise: 80 }
       ]
     },
     {
@@ -39,16 +38,13 @@ const Skills: React.FC = () => {
       skills: [
         { name: "Agile", expertise: 95 },
         { name: "Scrum", expertise: 90 },
-        { name: "TDD", expertise: 85 },
-        { name: "BDD", expertise: 80 },
-        { name: "CI/CD", expertise: 85 }
+        { name: "CI/CD", expertise: 65 }
       ]
     },
     {
       title: "Other Tools",
       skills: [
         { name: "JIRA", expertise: 95 },
-        { name: "TestRail", expertise: 90 },
         { name: "Git", expertise: 85 },
         { name: "Jenkins", expertise: 80 },
         { name: "Docker", expertise: 75 }
@@ -57,9 +53,9 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section section-container">
       <div className="container">
-        <h2>Technical Skills</h2>
+        <h2 className="section-heading">Skills</h2>
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
             <div key={index} className="skill-category">

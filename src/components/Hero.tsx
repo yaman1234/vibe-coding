@@ -2,12 +2,11 @@ import React from 'react';
 import '../styles/Hero.css';
 
 const Hero: React.FC = () => {
+  const cvUrl = '/assets/cv.pdf';
+
   const handleDownloadClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Prevent default if CV is not yet uploaded
-    if (!process.env.REACT_APP_CV_URL) {
-      e.preventDefault();
-      alert('CV will be available soon!');
-    }
+    // CV is now available, so we don't need to prevent default
+    // The browser will handle the download automatically
   };
 
   return (
@@ -17,7 +16,7 @@ const Hero: React.FC = () => {
           <h1>I am a Software Engineer</h1>
           <p>Specialized in Quality Assurance & Testing</p>
           <a 
-            href={process.env.REACT_APP_CV_URL || '#'}
+            href={cvUrl}
             download 
             className="download-cv-btn"
             onClick={handleDownloadClick}

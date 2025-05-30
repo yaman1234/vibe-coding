@@ -19,13 +19,13 @@ const Header: React.FC = () => {
           <div className="profile-section">
             <div className="profile-image-container">
               <img 
-                src="/profile-image.jpg" 
+                src="/assets/profile-image.jpeg" 
                 alt="Profile" 
                 className="profile-image"
               />
             </div>
             <div className="profile-info">
-              <h1 className="name">Your Name</h1>
+              <h1 className="name">Yaman Maharjan</h1>
               <p className="title">QA Engineer</p>
             </div>
           </div>
@@ -58,13 +58,13 @@ const Header: React.FC = () => {
           </ul>
 
           <div className="social-links">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/yaman-maharjan/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/yaman1234" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="mailto:your.email@example.com">
+            <a href="mailto:yamanmaharjan00@gmail.com">
               <i className="fas fa-envelope"></i>
             </a>
           </div>
